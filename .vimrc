@@ -1,3 +1,6 @@
+call pathogen#infect()
+call pathogen#helptags()
+
 colors zenburn
 set number
 
