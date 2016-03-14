@@ -1,3 +1,7 @@
+scriptencoding utf-8
+set encoding=utf-8
+setglobal fileencoding=utf-8
+
 call pathogen#infect()
 call pathogen#helptags()
 
