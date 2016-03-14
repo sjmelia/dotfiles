@@ -1,3 +1,4 @@
-ln -s ./.vim ~/.vim
-ln -s ./.vimrc ~/.vimrc
-ln -s ./.screenrc ~/.screenrc
+cd ~
+ln -s .dotfiles/.vim
+ln -s .dotfiles/.vimrc
+ln -s .dotfiles/.screenrc
