@@ -1,2 +1,5 @@
-caption always "%{-b ..}%-w%{+b ..}[[%n%f*%t]]%{-}%+w"
+hardstatus alwayslastline
+hardstatus string '%{= wk}[ %{k}%H %{k}][ %{=wk}%?%-Lw%?%{K}(%{k}%n %t%?%?%{K})%{k}%?%+Lw%?%?%= %{k}][%{k}%Y-%m-%d %{k}%c %{k}]'
+defscrollback 1000
 startup_message off
+defbce on
