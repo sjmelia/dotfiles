@@ -27,4 +27,4 @@ if has("win32")
 	set guifont=Consolas:h10
 endif
 
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
