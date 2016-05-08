@@ -21,3 +21,5 @@ main = do
 		}
 		`additionalKeysP`
 		[ ("M-f", spawn "firefox") ]
+		`additionalKeys` [
+		  ((0, 0x1008ff18), spawn "firefox")]
