@@ -1,10 +1,22 @@
 import XMonad
+import XMonad.Util.Run(spawnPipe)
 import qualified XMonad.StackSet as W
 import XMonad.Util.EZConfig
+import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.ManageDocks
+import System.IO
 
-main = xmonad$defaultConfig
-	{
-		modMask = mod4Mask
-	}
-	`additionalKeysP`
-	[ ("M-f", spawn "firefox") ]
+main = do
+	xmproc <- spawnPipe "xmobar"
+	xmonad $ defaultConfig
+		{
+			manageHook = manageDocks <+> manageHook defaultConfig,
+			layoutHook = avoidStruts $ layoutHook defaultConfig,
+			logHook = dynamicLogWithPP xmobarPP
+				{ ppOutput = hPutStrLn xmproc,
+				  ppTitle = xmobarColor "green" "". shorten 50
+				},
+			modMask = mod4Mask
+		}
+		`additionalKeysP`
+		[ ("M-f", spawn "firefox") ]
