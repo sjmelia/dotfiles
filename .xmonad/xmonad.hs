@@ -14,6 +14,7 @@ main = do
 			layoutHook = avoidStruts $ layoutHook defaultConfig,
 			logHook = dynamicLogWithPP xmobarPP
 				{ ppOutput = hPutStrLn xmproc,
+				  ppLayout = (\str -> ""),
 				  ppTitle = xmobarColor "green" "". shorten 50
 				},
 			modMask = mod4Mask
