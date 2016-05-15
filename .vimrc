@@ -28,3 +28,5 @@ if has("win32")
 endif
 
 " autocmd vimenter * NERDTree
+set modeline
+set modelines=5
