@@ -31,5 +31,10 @@ endif
 nmap <silent> <c-n> :NERDTreeToggle<cr>
 autocmd vimenter * if !argc() | NERDTree | endif
 
+" mouse support
+set ttyfast
+set mouse=a
+set ttymouse=xterm2
+
 set modeline
 set modelines=5
