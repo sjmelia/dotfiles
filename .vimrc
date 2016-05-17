@@ -33,7 +33,7 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 " mouse support
 set ttyfast
-set mouse=a
+set mouse=vn
 set ttymouse=xterm2
 
 set modeline
