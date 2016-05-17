@@ -27,6 +27,9 @@ if has("win32")
 	set guifont=Consolas:h10
 endif
 
-" autocmd vimenter * NERDTree
+" Map Ctrl+N to open the NERDTree sidebar
+nmap <silent> <c-n> :NERDTreeToggle<cr>
+autocmd vimenter * if !argc() | NERDTree | endif
+
 set modeline
 set modelines=5
