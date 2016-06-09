@@ -30,5 +30,14 @@ if has("win32")
 endif
 
 " autocmd vimenter * NERDTree
+" Map Ctrl+N to open the NERDTree sidebar
+nmap <silent> <c-n> :NERDTreeToggle<cr>
+autocmd vimenter * if !argc() | NERDTree | endif
+
+" mouse support
+set ttyfast
+set mouse=vn
+set ttymouse=xterm2
+
 set modeline
 set modelines=5
