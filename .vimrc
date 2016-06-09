@@ -22,6 +22,8 @@ set nowrap
 set backspace=2
 syntax on
 filetype plugin indent on
+autocmd BufRead,BufNewFile *.rs set filetype=rust
+autocmd FileType rust set ts=4 et sw=4 sts=4 tw=80
 
 if has("win32")
 	set guifont=Consolas:h10
