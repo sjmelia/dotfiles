@@ -4,14 +4,17 @@ import qualified XMonad.StackSet as W
 import XMonad.Util.EZConfig
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.ManageHelpers
+import XMonad.Layout.NoBorders
 import System.IO
+
 
 main = do
 	xmproc <- spawnPipe "xmobar"
 	xmonad $ defaultConfig
 		{
-			manageHook = manageDocks <+> manageHook defaultConfig,
-			layoutHook = avoidStruts $ layoutHook defaultConfig,
+			manageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig,
+			layoutHook = smartBorders . avoidStruts $ layoutHook defaultConfig,
 			logHook = dynamicLogWithPP xmobarPP
 				{ ppOutput = hPutStrLn xmproc,
 				  ppLayout = (\str -> ""),

@@ -5,7 +5,7 @@ Config { font = "xft:Nimbus Sans-10"
 	, fgColor = "grey"
 	, position = TopW L 100
 	, commands = [ Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
-			, Run BatteryP ["BAT0"]
+			, Run BatteryP ["BAT1"]
 				["-t", "<leftipat>",
 				"-L", "10", "-H", "80", "-p", "3",
 				"--", 
