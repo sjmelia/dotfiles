@@ -1,0 +1,3 @@
+#!/bin/bash
+xcompmgr -c &
+feh --bg-scale /home/steve/wallpaper.jpg &

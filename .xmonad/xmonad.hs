@@ -13,6 +13,7 @@ main = do
 	xmproc <- spawnPipe "xmobar"
 	xmonad $ defaultConfig
 		{
+			terminal = "urxvt",
 			manageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig,
 			layoutHook = smartBorders . avoidStruts $ layoutHook defaultConfig,
 			logHook = dynamicLogWithPP xmobarPP
