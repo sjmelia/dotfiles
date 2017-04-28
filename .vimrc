@@ -2,6 +2,11 @@ scriptencoding utf-8
 set encoding=utf-8
 setglobal fileencoding=utf-8
 
+if has("win32") || has('win64')
+  set guifont=Consolas:h10
+  set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+endif
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -32,10 +37,6 @@ autocmd FileType rust set ts=4 et sw=4 sts=4 tw=80
 autocmd FileType html set ts=2 et sw=2 sts=2 tw=80
 autocmd FileType xml set ts=2 et sw=2 sts=2 tw=80
 autocmd FileType javascript set ts=2 et sw=2 sts=2 tw=80
-
-if has("win32")
-	set guifont=Consolas:h10
-endif
 
 " autocmd vimenter * NERDTree
 " Map Ctrl+N to open the NERDTree sidebar
