@@ -3,9 +3,11 @@ set encoding=utf-8
 setglobal fileencoding=utf-8
 
 if has("win32") || has('win64')
-  set guifont=Consolas:h10
+  set guifont=Powerline_Consolas:h10,Consolas:h10
   set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
 endif
+
+let g:airline_powerline_fonts = 1
 
 call pathogen#infect()
 call pathogen#helptags()
