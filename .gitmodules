@@ -6,7 +6,7 @@
 	url = https://github.com/derekwyatt/vim-scala
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
-	url = git://github.com/elzr/vim-json.git
+	url = https://github.com/elzr/vim-json
 [submodule ".vim/bundle/vim-better-whitespace"]
 	path = .vim/bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
@@ -15,7 +15,13 @@
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
-	url = git://github.com/Valloric/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
-	url = git://github.com/vim-syntastic/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule ".vim/bundle/vim-ps1"]
+	path = .vim/bundle/vim-ps1
+	url = https://github.com/PProvost/vim-ps1.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
