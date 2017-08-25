@@ -1,6 +1,7 @@
 URxvt.depth: 32
 URxvt*background: rgba:eeee/eeee/eeee/dddd
-URxvt.font: xft:droid sans mono:medium:size=10
+URxvt.font: xft:droid sans mono for powerline:medium:size=10
+URxvt*letterSpace: -1
 URxvt*scrollBar: false
 URxvt*scrollstyle: rxvt
 
