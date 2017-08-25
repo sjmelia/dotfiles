@@ -3,6 +3,7 @@ import XMonad.Util.Run(spawnPipe)
 import qualified XMonad.StackSet as W
 import XMonad.Util.EZConfig
 import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import XMonad.Layout.NoBorders
@@ -11,7 +12,7 @@ import System.IO
 
 main = do
 	xmproc <- spawnPipe "xmobar"
-	xmonad $ defaultConfig
+	xmonad $ ewmh defaultConfig
 		{
 			terminal = "urxvt",
 			manageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig,
