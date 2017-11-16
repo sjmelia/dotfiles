@@ -39,6 +39,7 @@ autocmd FileType rust set ts=4 et sw=4 sts=4 tw=80
 autocmd FileType html set ts=2 et sw=2 sts=2 tw=80
 autocmd FileType xml set ts=2 et sw=2 sts=2 tw=80
 autocmd FileType javascript set ts=2 et sw=2 sts=2 tw=80
+autocmd FileType ruby set ts=2 et sw=2 sts=2 tw=80
 
 " autocmd vimenter * NERDTree
 " Map Ctrl+N to open the NERDTree sidebar
