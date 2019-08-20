@@ -5,6 +5,9 @@ ln -s .dotfiles/.vimrc
 ln -s .dotfiles/.screenrc
 ln -s .dotfiles/.hgrc
 
+# for git bash (win32)
+ln -s .dotfiles/.minttyrc
+
 mkdir .fonts
 wget -nc https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20Bold%20for%20Powerline.ttf?raw=true -O ~/.fonts/Inconsolata\ Bold\ for\ Powerline.ttf
 wget -nc https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf?raw=true -O ~/.fonts/Inconsolata\ for\ Powerline.otf
